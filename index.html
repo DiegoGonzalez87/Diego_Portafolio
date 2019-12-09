@@ -4,76 +4,578 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/estilo.css">
+     <link rel="stylesheet" href="css/fontello.css">
+     <script src="js/smooth-scroll.min.js"></script>
+     <link rel="shortcut icon" href="image/logo1.png" /> 
+     <title>Diego_Gonzalez</title>
+     <script>
+        smoothScroll.init({
+          selector: '[data-scrooll]',
+          selectorHeader: null,
+          speed: 500,
+          easing: 'easeInOutCubic',
+          offset: 0,
+          callback: function( anchor, toggle ){}
+        });
+      </script>
 </head>
 <body>
-         
+
+    <header>
+        <nav class="navbar navbar-expand-lg menu navbar-light navbar-fixed-top" >          
+            <a class="navbar-brand p-0" href="#"><img src="image/logo.png" style="margin-left: 20px; padding: 0 0px 2px 0; width: 20%;" alt="Diego Gonzalez" ></a>
+            <button class="navbar-toggler mr-2" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li>
+                        <a data-scroll href="#" class=" d-flex flex-column btn_clas" role="button">Inicio</a>
+                    </li>
+                  <li>
+                     <a data-scroll href="#sec2" class=" d-flex flex-column btn_clas" role="button">Experiencia</a>
+                  </li>
+                  <li>
+                     <a data-scroll href="#sec3" class=" d-flex flex-column btn_clas" role="button" id="inicio">Conocimiento</a>
+                  </li>
+                  <li>
+                      <a data-scroll href="#sec4" class=" d-flex flex-column btn_clas" role="button" id="inicio">Estudios</a>
+                   </li>
+                   <li>
+                      <a data-scroll href="#sec5" class=" d-flex flex-column btn_clas" role="button" id="inicio">Contacto</a>
+                   </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+      <div class="dongato">
+        <div class="contenedor">
+          <div class="contenedor-texto">
+            <div class="texto">
+              <h1 class="nombre">Diego Alejandro González Acuña</h1>
+              <h2 class="profesion">Desarrollo - Web</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="main">
+        <section class="acerca-de" id="sec1">
+          <div class="contenedor">
+            <div class="foto">
+              <img src="image/Perfil.jpg"  style="border: 5px solid rgba(14, 136, 40, 1)" width="150" height="150" alt="Carlos Arturo">
+            </div>
+          
+            <div class="texto">
+              <h3 class="titulo">Perfil</h3>
+              <p>Me desempeño como desarrollador web, con capacidad de diseñar aplicaciones informaticas, mantener una 
+                  observación  permanente, como participar en grupos de desarrollo de software, realizar proyectos de investigación, con la habilidad de aprendizaje autónomo y gran capacidad de trabajo bajo presión.<br>
+
+                      Soy una persona  creativa con facil adaptación al cambio, habilidades en resolución de conflictos y me adapto facilmente a equipos de trabajo.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-fluid experiencia" id="sec2">
+          <section class="container" >
+              <h3 class="titulo">Experiencia Laboral</h3>
+            <div class="row">
+                <div class="col-md-4 expe">
+                    <div class="card">
+                      <div class="card-header bg-secondary">
+                          <h5>Kayssenn Colsutoria - 2019</h5>
+                      </div>
+                      <div class="card-body" style="color: black; font-size: 1em; line-height: 30px;">
+                          <h5><b>Desarrollador</b></h5>
+
+                              <p class="card-text"><b>Funciones:</b> 
+                                Elaborar aplicativo en Node-js y mysql, para 
+                                estadistico de pruebas spicotécnicas.</p>
+                              
+                                <p class="card-text">Dar soporte tecnologico, redes y diseño.</p>
+                              
+                                <p class="card-text"><b>Jefe Inmediato:</b> Luz Angela Gonzalez
+                                  <b>Celular:</b> 3115439439</p>
+                        </div>
+                    </div>
+                  </div>
+                <div class="col-md-4 expe">
+                    <div class="card">
+                      <div class="card-header bg-secondary">
+                          <h5>Inversiones El Pino - 2018-2019</h5>
+                      </div>
+                      <div class="card-body" style="color: black; font-size: 1em; line-height: 30px;">
+                          <h5><b>Consultor Tecnologico</b></h5>
+
+                              <p class="card-text"><b>Funciones:</b> 
+                                Desarrollo de informtico de inventários, despachos, control de aplicaion de quimicos,y facturación.</p>
+                              
+                                <p class="card-text">Dar soporte tecnologico, redes y diseño-logo.</p>
+                              
+                                <p class="card-text"><b>Jefe Inmediato:</b> Olegario Rodriguez
+                                  <b>Celular:</b> 3142164083</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 expe">
+                    <div class="card">
+                      <div class="card-header bg-secondary">
+                          <h5>SIEP Servicios - 2017</h5>
+                      </div>
+                      <div class="card-body" style="color: black; font-size: 1em; line-height: 30px;">
+                          <h5><b>Consultor Tecnologico.</b></h5>
+                            
+                              <p class="card-text"><b>Funciones:</b> 
+                                Elaborar Base de Datos MySQL, y desarrollo informatico en php para la web.</p>
+                              
+                                <p class="card-text">	Dar soporte tecnologico, redes y diseño</p>
+                              
+                                <p class="card-text"><b>Jefe Inmediato:</b>Claudia Constanza Laiton
+                                  <b>Celular:</b>3115439439</p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 expe">
+                    <div class="card">
+                      <div class="card-header bg-secondary">
+                          <h5>Tecnicontrol SAS - 2011-Actual</h5>
+                      </div>
+                      <div class="card-body" style="color: black; font-size: 1em; line-height: 30px;">
+                          <h5><b>Inspector NDT</b></h5>
+
+                              <p class="card-text"><b>Funciones:</b> 
+                                Inspector de materiales y equipos en el sector energetico..</p>
+                              
+                                <p class="card-text">Cerificacion Nivel II Ultrasonido.
+                                    Cerificacion Nivel II Particulas magneticas.
+                                    Cerificacion Nivel II Tintas Penetrantes</p>
+                              
+                                <p class="card-text"><b>Jefe Inmediato:</b> Mauricio Forero
+
+                                 <br> <b>Celular:</b> 667-4444</p>
+                        </div>
+                    </div>
+                  </div>
+                <div class="col-md-4 expe">
+                    <div class="card">
+                      <div class="card-header bg-secondary">
+                          <h5>South American Inspeccion Services - 2009-2011  </h5>
+                      </div>
+                      <div class="card-body" style="color: black; font-size: 1em; line-height: 30px;">
+                          <h5><b>Inspector NDT</b></h5>
+
+                              <p class="card-text"><b>Funciones:</b> 
+                                I	nspector de materiales y equipos en el sector	energetico.</p>
+                              
+                                <p class="card-text">Cerificacion Nivel II Particulas magneticas.
+                                    Cerificacion Nivel II Tintas Penetrantes.</p>
+                              
+                                <p class="card-text"><b>Jefe Inmediato:</b> Orlando Porras
+                                  <br><b>Celular:</b> 629-2926</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 expe">
+                    <div class="card">
+                      <div class="card-header bg-secondary">
+                          <h5>SIEP SUPERIOR ENERGY SERVICES COLOMBIA - 2009</h5>
+                      </div>
+                      <div class="card-body" style="color: black; font-size: 1em; line-height: 30px;">
+                          <h5><b>Auxiliar de Inpección</b></h5>
+                            
+                              <p class="card-text"><b>Funciones:</b> 
+                                nspector de materiales y equipos en el sector	energetico.</p>
+                              
+                                <p class="card-text">	Preparación de herramientas de perforación
+                                    para Inspeción con ensayos no destructivos.</p>
+                              
+                                <p class="card-text"><b>Jefe Inmediato:</b>Manuel Rodriguez
+                                  <b>Celular:</b>742-7854</p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+          </section>
+      </div>
+
+
+      <div class="container-fluid cono" >
+          <section class="container" id="sec3" style="padding-top:40px;">
+              <h3 class="titulo1">Conocimiento</h3>
+
+            <div class="row">
+
+              <div class="col-md-6 expe">
+                  <div class="card mb-3" style="max-width: 540px; background-color: #009045; border: none;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="image/lengua.png"  class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Lenguajes de Programación</h5>
+                          <ul style="padding-left:20px;">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>C#</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>SASS</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-md-6 expe">
+                  <div class="card mb-3" style="max-width: 540px; background-color: #009045; border: none;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="image/frameword.png"  class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Framework</h5>
+                          <ul style="padding-left:20px;">
+                              <li>Django</li>
+                              <li>Node - js</li>
+                              <li>Express</li>
+                              <li>Angular</li>
+                              <li>ReactJS</li>
+                              <li>Bootstrap</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 expe">
+                    <div class="card mb-3" style="max-width: 540px; background-color: #009045; border: none;">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="image/bd.png"  class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Base de Datos</h5>
+                            <ul style="padding-left:20px;">
+                              <li>MySQL</li>
+                              <li>PostgreSQL</li>
+                              <li>SQL-Server</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+  
+                <div class="col-md-6 expe">
+                    <div class="card mb-3" style="max-width: 540px; background-color: #009045; border: none;">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="image/Repo.png"  class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Control de Versiones</h5>
+                            <ul style="padding-left:20px;">
+                                <li>Git</li>
+                                <li>GitLab</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+  
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-6 expe">
+                      <div class="card mb-3" style="max-width: 540px; background-color: #009045; border: none;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="image/progra.png"  class="card-img" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Programas</h5>
+                              <ul style="padding-left:20px;">
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>InDesign</li>
+                                <li>Premiere Pro</li>
+                                <li>AutoCad</li>
+                                <li>Unity</li>
+                                <li>TomoView</li>
+                                <li>Office
+                                  <ul style="padding-left:20px;">
+                                		<li>Excel</li>
+                                		<li>Word</li>
+                                		<li>PowerPoint</li>
+                                    <li>Access</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+    
+                  <div class="col-md-6 expe">
+                      <div class="card mb-3" style="max-width: 540px; background-color: #009045; border: none;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="image/ut.png"  class="card-img" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Ensayos No Destructivos</h5>
+                              <ul style="padding-left:20px;">
+                                  <li>Ultrasonido
+                                      <ul style="padding-left:20px;">
+                                          <li>		Phased Array </li>
+                                          <li>		Convencional</li>
+                                      </ul>
+                                  </li>
+                                  <li>Liquidos Penetrantes</li>
+                                  <li>Particulas Magneticas</li>
+                                  <li>Perdida de Flujo Magnetico</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+    
+                </div>
+
+          </section>
+      </div>
+
+      <div class="container-fluid experiencia" id="sec4">
+      <h3 class="titulo1">Estudios</h3>
       <section class="timeline">
-        <ol>
-          <li>
-            <div>
-              <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li></li>
-        </ol>
-        
-      </section>
+          <ol>
+            <li>
+              <div>
+                <time>2005</time>Bachiller Academico
+                Institución Educativa 
+                Departamental Santiago Perez
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2008</time> AutCad
+                <br>SENA
+                <br>20 horas
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2008</time> Basico de SMAW 
+                  <br>Nivel I
+                  <br>SENA
+                  <br>20 horas
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2008</time> Metrologia:
+                  <br>Patrones, Instrumentos y Tolerancias
+                  <br>SENA
+                  <br>40 horas
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2009</time> Tecnico Profecional
+                  <br>Inspección de piezas,
+                  <br>Materiales y equipos
+                  <br>Metalmecanicos
+                  <br>SENA
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2010</time> Magnetig Particle Testing (MT)
+                  <br>Nivel II
+                  <br>NDT - Ingenieria
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2010</time> Liquid Penetrant Testing (PT)
+                  <br>Nivel II
+                  <br>NDT - Ingenieria
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2012</time> Ultrasonido (UT)
+                  <br>Nivel II
+                  <br>Tecnicntrol
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2012</time> Ultrasonido (UT)
+                  <br>Nivel II
+                  <br>Tecnicntrol
+              </div>
+            </li>
+            <li>
+               <div>
+                   <time>2012</time> Liquidos Penetrantes (PT)
+                   <br>Nivel II
+                   <br>Tecnicntrol
+               </div>
+            </li>
+            <li>
+                <div>
+                    <time>2012</time> Particulas Magneticas (MT)
+                    <br>Nivel II
+                    <br>Tecnicntrol
+                </div>
+            <li>
+              <div>
+                  <time>2015</time> AutCad 2D
+                  <br>SENA
+                  <br>40 horas
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2015</time> Interpretacion de Planos
+                  <br>SENA
+                  <br>60 horas
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2017</time> Creación de paginas
+                  <br>Web con JS
+                  <br>SENA
+                  <br>40 horas
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2017</time> Bootstrap 4
+                  <br>Udemy
+                  <br>16 horas
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2019</time> Tecnólogo
+                  <br>Analisis y Desarrollo
+                  <br>de Sistemas de Información
+                  <br>SENA
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2019</time> PHP y MySQL
+                  <br>Udemy
+                  <br>20 horas
+              </div>
+            </li>
+            <li>
+              <div>
+                  <time>2019</time> Desarrollo Ful Stack
+                  <br>Nivel Pro - Cymetria
+                  <br>80 horas
+              </div>
+            </li>
+            <li>
+                <div>
+                    <time>2019</time> Ingeniería Informática
+                    <br>Escula Latinoamericana de
+                    <br>Ingeniero, Tecnologos y Empresarios
+                    <br>Quinto Semestre
+                </div>
+              </li>
+            <li></li>
+          </ol>
+          
+          <div class="arrows">
+            <button class="arrow arrow__prev disabled" disabled>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+            </button>
+            <button class="arrow arrow__next">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="container-fluid" style="background-color: #f7f7f7; padding-top: 80px;" id="sec5">
+        <div class="container">
+          <div class="row contacto justify-content-center">
+           <div class="col-12 col-lg-8">
+             <h2 class="titulo">Contacto</h2>
+             <form action="" class="formulario">
+               <div class="form-group row">
+                 <div class="col-12 col-md-6">
+                   <input type="text" name="" id="" placeholder="Nombre">
+                 </div>
+                 <div class="col-12 col-md-6">
+                   <input type="email" name="" id="" placeholder="Correo">
+                 </div>
+               </div>
+               <textarea name="" id="" placeholder="Correo"></textarea>
+               <div class="form-group d-flex justify-content-center">
+                 <input type="submit" class="boton" value="Enviar">
+               </div>
+             </form>
+           </div>
+          </div>
+        </div>
+        </section>
+    </section>
+    <footer>
+      <div class="container">
+        <!-- Redes Sociales -->
+        <div class="row redes-sociales justify-content-center">
+          <div class="col-auto">
+            <a href="#" class="icono icon-instagram instagram"></a>
+            <a href="#" class="icono icon-facebook facebook"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/babel.js"></script>
+    <script src="js/seccion1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
 </body>
 </html>
